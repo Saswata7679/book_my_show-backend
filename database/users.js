@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 //create movies schema
 const UsersSchema = mongoose.Schema({
-    username: String,
+    username:String,
     email: String,
     password: String
 });

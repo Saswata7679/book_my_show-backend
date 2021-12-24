@@ -11,7 +11,8 @@ app.use(express.json());
 var mongoose = require('mongoose');
 //Set up default mongoose connection
 var mongoDB = process.env.MONGODB_URI;
-mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true}).then(()=>console.log("CONNECTION ESTABLISHED"));
+var mongoDB='mongodb+srv://jhulan_1234:ECMcpu6XxVehCtLs@cluster0.haqke.mongodb.net/bookmyshow?retryWrites=true&w=majority'
+mongoose.connect(mongoDB,{useNewUrlParser: true, useUnifiedTopology: true }).then(()=>console.log("CONNECTION ESTABLISHED"))
 
 // http://localhost:5000/
 app.get("/", (req, res) => {
